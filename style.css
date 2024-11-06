@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root {
+    --Pale-Violet: hsl(276, 100%, 81%);
+    --Moderate-Violet: hsl(276, 55%, 52%);
+    --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+    --Grayish-Blue: hsl(206, 6%, 79%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet: hsl(270, 20%, 96%);
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+    --Very-Light-Magenta: hsl(289, 100%, 72%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img, svg {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: #fff;
+}
+
+.content {
+    display: flex;
+    overflow: hidden;
+    gap: 280px
+}
+
+.first, .second {
+    width: 50%;
+    position: relative;
+}
+
+.pattern1 {
+    position: absolute;
+    height: 85vh;
+    width: 500px;
+    top: 0;
+    left: -50px;
+    background: linear-gradient(250deg, var(--Light-Magenta), var(--Light-Violet));
+    border-radius: 0 0 50% 44%;
+}
+
+.phone {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 12px 18px 40px #555;
+    border-radius: 40px;
+    width: 400px;
+    height: 745px;
+    background-color: #fff;
+    border: 15px solid white;
+    left: 45%;
+    top: 5rem;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, var(--Light-Violet), var(--Very-Light-Magenta));
+    border-radius: 25px 25px 0 0;
+    padding: 50px 20px 20px;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    background-color: var(--White);
+    width: 50%;
+    height: 35px;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 20px 20px;
+}
+
+.header svg {
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+}
+.header .profile {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    margin-left: 10px;
+}
+
+.header .profile .name {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--White);
+    margin-bottom: 5px;
+}
+
+.header .profile .dec {
+    color: var(--Light-Grayish-Violet);
+    opacity: .8;
+}
+.header img {
+    width: 35px;
+    height: 35px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.phone .chat {
+    background-color: var(--Light-Grayish-Violet);
+    border-radius: 0 0 25px 25px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.chat .Violet-text {
+    color: var(--Moderate-Violet);
+    background-color: var(--Grayish-Blue);
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 13px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    align-self: flex-start;
+}
+
+.chat .images {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.chat .images img {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.chat .white-bg {
+    background-color: var(--White);
+    margin-top: 10px;
+    padding: 13px;
+    width: 190px;
+    align-self: flex-end;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 13px;
+}
+
+.chat .white-bg.two {
+    width: fit-content;
+    margin-bottom: 12px;
+}
+
+.chat .prices {
+    background: linear-gradient(to right, var(--Light-Magenta), var(--Light-Violet));
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 10px 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: var(--White);
+    justify-content: space-between;
+}
+
+.chat .prices .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+}
+
+.chat .prices .duration {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.chat .prices .price {
+    font-size: 18px;
+    font-weight: 700;
+}
+.chat .type-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--White);
+    padding: 8px;
+    border-radius: 30px;
+    margin-top: 17px;
+}
+
+.chat .type-field .txt {
+    color: var(--Dark-Grayish-Violet);
+    padding-right: 20px;
+}
+
+.chat .type-field .arrow {
+    background-color: var(--Very-Dark-Desaturated-Violet);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chat .type-field .arrow svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+
+}
+.second {
+    display: flex;
+    min-height: 100vh;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.pattern2 {
+    position: absolute;
+    height: 85%;
+    width: 500px;
+    bottom: -20px;
+    right: -66px;
+    background: var(--Light-Grayish-Violet);
+    border-radius: 50% 44% 0 0;
+}
+
+.content .text {
+    position: relative;
+    float: left;
+    margin: auto;
+    width: 600px;
+}
+
+.content .text h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.content .text p {
+    color: var(--Grayish-Blue);
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+    }
+    .first {
+        width: 100%;
+        height: 100vh;
+    }
+    .second {
+        height: auto;
+        width: 100%;
+    }
+    .phone {
+        top: 2.5rem;
+        left: 30%;
+    }
+    .content .text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        /* padding-top: 200px; */
+    }
+    .phone {
+        width: 400px;
+        height: 745px;
+    }
+    .pattern1 {
+        width: 300px;
+    }
+    .pattern2 {
+        width: 300px;
+    }
+    .content .text {
+        text-align: center;
+        width: 450px;
+    }
+}
